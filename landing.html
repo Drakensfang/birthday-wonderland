@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Ham Ham Land...</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=MedievalSharp&family=Uncial+Antiqua&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="landing.css">
+</head>
+<body>
+    <!-- Background Music -->
+    <audio id="bgMusic" loop autoplay>
+        <source src="music/soundtrack.mp3" type="audio/mpeg">
+        <source src="music/soundtrack.ogg" type="audio/ogg">
+    </audio>
+    
+    <!-- Music Control Button -->
+    <button id="musicToggle" class="music-toggle" aria-label="Toggle music">
+        🎵
+    </button>
+    
+    <div class="landing-container">
+        <h1 class="title" id="animatedTitle"></h1>
+        
+        <p class="instruction">Find the hidden golden key among the photos!</p>
+        <p class="sub-instruction">Click on the photos to reveal what's behind them</p>
+        
+        <div class="scene">
+            <div class="door-container" id="doorContainer">
+                <div class="door" id="door">
+                    <div class="door-panel left-panel"></div>
+                    <div class="door-panel right-panel"></div>
+                    <div class="keyhole" id="keyhole">🔓</div>
+                </div>
+            </div>
+            
+            <!-- Obstacles -->
+            <div class="obstacle card-obstacle" data-position="1">
+                <div class="obstacle-front">
+                    <img src="images/obstacle1.jpeg" alt="Obstacle 1" class="obstacle-image">
+                </div>
+                <div class="obstacle-back"></div>
+            </div>
+            <div class="obstacle card-obstacle" data-position="2">
+                <div class="obstacle-front">
+                    <img src="images/obstacle2.jpeg" alt="Obstacle 2" class="obstacle-image">
+                </div>
+                <div class="obstacle-back"></div>
+            </div>
+            <div class="obstacle teacup-obstacle" data-position="3">
+                <div class="obstacle-front">
+                    <img src="images/obstacle3.jpeg" alt="Obstacle 3" class="obstacle-image">
+                </div>
+                <div class="obstacle-back"></div>
+            </div>
+            <div class="obstacle mushroom-obstacle" data-position="4">
+                <div class="obstacle-front">
+                    <img src="images/obstacle4.jpeg" alt="Obstacle 4" class="obstacle-image">
+                </div>
+                <div class="obstacle-back"></div>
+            </div>
+            <div class="obstacle card-obstacle" data-position="5">
+                <div class="obstacle-front">
+                    <img src="images/obstacle5.jpeg" alt="Obstacle 5" class="obstacle-image">
+                </div>
+                <div class="obstacle-back"></div>
+            </div>
+            <div class="obstacle teacup-obstacle" data-position="6">
+                <div class="obstacle-front">
+                    <img src="images/obstacle6.jpeg" alt="Obstacle 6" class="obstacle-image">
+                </div>
+                <div class="obstacle-back"></div>
+            </div>
+            <div class="obstacle mushroom-obstacle" data-position="7">
+                <div class="obstacle-front">
+                    <img src="images/obstacle7.jpeg" alt="Obstacle 7" class="obstacle-image">
+                </div>
+                <div class="obstacle-back"></div>
+            </div>
+            <div class="obstacle card-obstacle" data-position="8">
+                <div class="obstacle-front">
+                    <img src="images/obstacle8.jpeg" alt="Obstacle 8" class="obstacle-image">
+                </div>
+                <div class="obstacle-back"></div>
+            </div>
+            <div class="obstacle teacup-obstacle" data-position="9">
+                <div class="obstacle-front">
+                    <img src="images/obstacle9.jpeg" alt="Obstacle 9" class="obstacle-image">
+                </div>
+                <div class="obstacle-back"></div>
+            </div>
+        </div>
+        
+        <div class="sparkles" id="sparkles"></div>
+        <div class="hint" id="hint">✨ Find the key hidden behind one of the photos! ✨</div>
+    </div>
+    
+    <script src="landing.js"></script>
+</body>
+</html>

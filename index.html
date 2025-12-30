@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday! 🎂✨</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=MedievalSharp&family=Uncial+Antiqua&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background Music -->
+    <audio id="bgMusic" loop autoplay>
+        <source src="music/Exploration.mp3" type="audio/mpeg">
+    </audio>
+    
+    <!-- Music Control Button -->
+    <button id="musicToggle" class="music-toggle" aria-label="Toggle music">
+        🎵
+    </button>
+    
+    <div class="floating-elements">
+        <!-- Coraline themed emotes -->
+        <div class="playing-card card-1">🧵</div>
+        <div class="playing-card card-2">🪡</div>
+        <div class="playing-card card-3">👁️</div>
+        <div class="playing-card card-4">🕷️</div>
+        <div class="playing-card card-5">🐈‍⬛</div>
+        <div class="playing-card card-6">🔑</div>
+        <div class="teacup">🕸️</div>
+        <div class="rose">🌙</div>
+        <div class="clock">⏰</div>
+        <div class="mushroom">🍄</div>
+        <div class="key">🗝️</div>
+        <div class="star">⭐</div>
+        
+        <!-- Coraline GIFs that pop in and out -->
+        <div class="coraline-gif coraline-gif-1">
+            <img src="https://media.tenor.com/ll-KU853IYsAAAAM/coraline-smile.gif" alt="Coraline smile">
+        </div>
+        <div class="coraline-gif coraline-gif-2">
+            <img src="https://media4.giphy.com/media/v1.Y2lkPTZjMDliOTUybDVleXR3a3ZuNzA3ZjI1MmUzczZxY2c1MzMxcThqdTBxcTZhOTk4diZlcD12MV9naWZzX3NlYXJjaCZjdD1n/2oi8VjpB3recadAiTQ/giphy.gif" alt="Coraline">
+        </div>
+        <div class="coraline-gif coraline-gif-3">
+            <img src="https://i.pinimg.com/originals/09/2d/3e/092d3e2ca1122a860c9cfd1b5264f853.gif" alt="Coraline">
+        </div>
+        <div class="coraline-gif coraline-gif-4">
+            <img src="https://i.pinimg.com/originals/2b/3d/99/2b3d996d48260b2ca85c26f6deb70c7b.gif" alt="Coraline">
+        </div>
+    </div>
+
+    <div class="container">
+        <header class="header scroll-reveal">
+            <div class="alice-image">
+                <img src="https://media.tenor.com/7VxkL1jUWVMAAAAM/je-t%27aime.gif" alt="Cheshire Cat" class="character-img cheshire-cat-header">
+            </div>
+            <h1 class="title">🐰 Down the Rabbit Hole... 🐰</h1>
+            <p class="subtitle">A Very Merry Birthday to my BELOVED! 🎉</p>
+        </header>
+
+        <section class="quote-section scroll-reveal">
+            <div class="character-side left-character">
+                <img src="https://media.tenor.com/jyKT5kqdsscAAAAe/pocketwatch-rabbit.png" alt="White Rabbit" class="character-img rabbit">
+            </div>
+            <div class="quote-card">
+                <p class="quote">"Why, sometimes I've believed as many as six impossible things before breakfast."</p>
+                <p class="quote-sub">And today, the most wonderful impossible thing is celebrating YOU! 💝</p>
+            </div>
+            <div class="character-side right-character">
+                <img src="https://media.tenor.com/Z42QdFttowgAAAAM/johnny-depp-mad-hatter.gif" alt="Mad Hatter" class="character-img hatter">
+            </div>
+        </section>
+
+        <section class="message-section scroll-reveal">
+            <div class="cheshire-container">
+                <img src="images/cutie.jpeg" alt="Alice" class="character-img Alice">
+                <h2>💌 A Message from Ham Ham Land 💌</h2>
+            </div>
+            
+            <div class="message-card">
+                <p>My Dearest,</p>
+                <p>I fell into a world of joy the moment you came into my life. You are the greatest thing to ever happen to me!</p>
+                <p>You make every day feel like an adventure through Wonderland – full of magic, laughter, and beautiful surprises.</p>
+                <p>On this special day, I hope you will continue being so joyful and radiant!</p>
+                <p class="signature">Happy Birthday, my Queen of Hearts! ❤️👑</p>
+            </div>
+        </section>
+
+        <section class="wishes-section">
+            <h2 class="scroll-reveal">📸 Our Memory Gallery 📸</h2>
+            <div class="timeline-container">
+                <div class="timeline-card scroll-reveal" data-sound="rabbit">
+                    <div class="timeline-card-inner">
+                        <div class="timeline-card-front">
+                            <span class="timeline-icon">🎓</span>
+                            <h3>The Beginning</h3>
+                            <p>Where it all started</p>
+                        </div>
+                        <div class="timeline-card-back">
+                            <img src="images/obstacle10.jpeg" alt="The Beginning">
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-card scroll-reveal" data-sound="hatter">
+                    <div class="timeline-card-inner">
+                        <div class="timeline-card-front">
+                            <span class="timeline-icon">🌟</span>
+                            <h3>First Overseas Trip</h3>
+                            <p>Making memories together</p>
+                        </div>
+                        <div class="timeline-card-back">
+                            <img src="images/taiwan.jpeg" alt="First Overseas Trip">
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-card scroll-reveal" data-sound="rose">
+                    <div class="timeline-card-inner">
+                        <div class="timeline-card-front">
+                            <span class="timeline-icon">✈️</span>
+                            <h3>Shanghai Trip</h3>
+                            <p>Exploring the world side by side</p>
+                        </div>
+                        <div class="timeline-card-back">
+                            <img src="images/shanghai.jpeg" alt="Shanghai Trip">
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-card scroll-reveal" data-sound="sparkle">
+                    <div class="timeline-card-inner">
+                        <div class="timeline-card-front">
+                            <span class="timeline-icon">🎉</span>
+                            <h3>Here's to more</h3>
+                            <p>Celebrations and milestones</p>
+                        </div>
+                        <div class="timeline-card-back">
+                            <img src="images/obstacle11.jpeg" alt="Here's to more">
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-card scroll-reveal" data-sound="butterfly">
+                    <div class="timeline-card-inner">
+                        <div class="timeline-card-front">
+                            <span class="timeline-icon">💫</span>
+                            <h3>Growing Together</h3>
+                            <p>Every day an adventure</p>
+                        </div>
+                        <div class="timeline-card-back">
+                            <img src="images/obstacle5.jpeg" alt="Growing Together">
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-card scroll-reveal" data-sound="heart">
+                    <div class="timeline-card-inner">
+                        <div class="timeline-card-front">
+                            <span class="timeline-icon">💕</span>
+                            <h3>Always be My Baby</h3>
+                            <p>Here's to many more years!</p>
+                        </div>
+                        <div class="timeline-card-back">
+                            <img src="images/r.jpeg" alt="Always be My Baby">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="puzzle-section scroll-reveal">
+            <h2>💌 Solve the Riddle to Unlock... 💌</h2>
+            <p class="puzzle-hint">Think carefully...</p>
+            <div class="puzzle-question">
+                <p>What is my favourite part about you ⏰</p>
+            </div>
+            <div class="puzzle-input-container">
+                <input type="text" id="puzzleAnswer" class="puzzle-input" placeholder="Type your answer...">
+                <button onclick="checkAnswer()" class="puzzle-button">Submit</button>
+            </div>
+            <p id="puzzleMessage" class="puzzle-message"></p>
+        </div>
+    </div>
+
+    <script>
+        function checkAnswer() {
+            const answer = document.getElementById('puzzleAnswer').value.toLowerCase().trim();
+            const message = document.getElementById('puzzleMessage');
+            const puzzleSection = document.querySelector('.puzzle-section');
+            
+            // Accept multiple variations
+            if (answer === 'everything' || answer === 'funny' || answer === 'kindness' || answer === 'generosity' || answer === 'your smile') {
+                message.style.color = '#4CAF50';
+                message.textContent = '✨ Correct! Opening the gateway... ✨';
+                
+                // Add success animation
+                puzzleSection.style.transform = 'scale(1.05)';
+                puzzleSection.style.boxShadow = '0 20px 60px rgba(255, 215, 0, 0.6), 0 0 50px rgba(255, 215, 0, 0.5)';
+                
+                // Create celebration sparkles
+                for (let i = 0; i < 30; i++) {
+                    setTimeout(() => {
+                        createCelebrationSparkle();
+                    }, i * 50);
+                }
+                
+                setTimeout(() => {
+                    puzzleSection.style.opacity = '0';
+                    puzzleSection.style.transform = 'scale(0.8) rotateY(180deg)';
+                    setTimeout(() => {
+                        window.location.href = 'message.html';
+                    }, 500);
+                }, 1500);
+            } else {
+                message.style.color = '#ff6b9d';
+                message.textContent = '❌ Not quite! Think carefully... ⏰';
+                
+                // Shake animation on wrong answer
+                puzzleSection.style.animation = 'shake 0.5s';
+                setTimeout(() => {
+                    puzzleSection.style.animation = '';
+                }, 500);
+            }
+        }
+        
+        function createCelebrationSparkle() {
+            const sparkle = document.createElement('div');
+            sparkle.textContent = ['✨', '⭐', '💫', '🌟', '⚡'][Math.floor(Math.random() * 5)];
+            sparkle.style.cssText = `
+                position: fixed;
+                left: ${Math.random() * 100}%;
+                top: ${Math.random() * 100}%;
+                font-size: ${20 + Math.random() * 40}px;
+                pointer-events: none;
+                z-index: 9999;
+                animation: celebrateSparkle 2s ease-out forwards;
+            `;
+            document.body.appendChild(sparkle);
+            setTimeout(() => sparkle.remove(), 2000);
+        }
+        
+        // Allow Enter key to submit
+        document.getElementById('puzzleAnswer').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                checkAnswer();
+            }
+        });
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Special Message 💌</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=MedievalSharp&family=Uncial+Antiqua&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background Music -->
+    <audio id="bgMusic" loop autoplay>
+        <source src="music/qinghuaci.mp3" type="audio/mpeg">
+    </audio>
+    
+    <!-- Music Control Button -->
+    <button id="musicToggle" class="music-toggle" aria-label="Toggle music">
+        🎵
+    </button>
+
+    <div class="floating-elements">
+        <div class="playing-card card-1">♠️</div>
+        <div class="playing-card card-2">♥️</div>
+        <div class="playing-card card-3">♣️</div>
+        <div class="playing-card card-4">♦️</div>
+        <div class="playing-card card-5">♠️</div>
+        <div class="playing-card card-6">♥️</div>
+        <div class="teacup">🫖</div>
+        <div class="rose">🌹</div>
+        <div class="clock">🕐</div>
+        <div class="mushroom">🍄</div>
+        <div class="key">🔑</div>
+        <div class="star">⭐</div>
+        <div class="rabbit">🐰</div>
+        <div class="cat">😺</div>
+        <div class="flamingo">🦩</div>
+        <div class="hedgehog">🦔</div>
+        <div class="potion">🧪</div>
+        <div class="crown">👑</div>
+        <div class="mirror">🪞</div>
+    </div>
+
+    <div class="container">
+        <header class="message-header scroll-reveal">
+            <div class="alice-image">
+                <img src="https://media.tenor.com/DAhjDtGSoswAAAAM/baby-maverick-well-in-that-case.gif" alt="Maverick" class="character-img">
+            </div>
+            <h1 class="title">💌 A Special Message For You 💌</h1>
+        </header>
+
+        <section class="final-message-section scroll-reveal">
+            <div class="message-card special-card">
+                <div class="message-header-icon">✨</div>
+                <h2>My Dearest Love,</h2>
+                <p class="message-text">You solved the riddle, just like you've solved the puzzle of my heart. Every moment with you is a treasure, every day an adventure I never want to end.</p>
+            </div>
+        </section>
+
+        <section class="gratitude-section scroll-reveal">
+            <div class="message-card special-card">
+                <div class="message-header-icon">💖</div>
+                <h2>Thank You For...</h2>
+                <div class="gratitude-list">
+                    <div class="gratitude-item">
+                        <span class="gratitude-icon">🌟</span>
+                        <p>Being my light in the darkest times</p>
+                    </div>
+                    <div class="gratitude-item">
+                        <span class="gratitude-icon">😊</span>
+                        <p>Making me laugh until my cheeks hurt</p>
+                    </div>
+                    <div class="gratitude-item">
+                        <span class="gratitude-icon">🤗</span>
+                        <p>Always being there when I need you</p>
+                    </div>
+                    <div class="gratitude-item">
+                        <span class="gratitude-icon">🌈</span>
+                        <p>Bringing color and joy to my life</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="dreams-section scroll-reveal">
+            <div class="message-card special-card">
+                <div class="message-header-icon">🌠</div>
+                <h2>Looking Forward To...</h2>
+                <div class="dreams-grid">
+                    <div class="dream-card">
+                        <span class="dream-icon">✈️</span>
+                        <p>More adventures around the world with you</p>
+                    </div>
+                    <div class="dream-card">
+                        <span class="dream-icon">🎉</span>
+                        <p>Celebrating countless more birthdays together</p>
+                    </div>
+                    <div class="dream-card">
+                        <span class="dream-icon">🏡</span>
+                        <p>Building our future side by side</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="final-words-section scroll-reveal">
+            <div class="message-card special-card final-card">
+                <div class="message-header-icon">👑</div>
+                <h2>You Are My Everything</h2>
+                <div class="message-text big-text">
+                    <p class="paragraph">Happy Birthday you lil toot. It's been a year full of ups and down and I'm glad to have spent it with you by my side.</p>
+                    <p class="paragraph">You are the greatest gift I could have ever asked for. I know there were a lot of fights and disappointments but you always forgave me.</p>
+                    <p class="paragraph">I'm sick of this attitude and I want to achieve success for our futures. No matter what happens in 2026, I know we will crush it and attain all our dreams together.</p>
+                    <p class="paragraph highlight">Cheers to another bountiful and exciting year with you!</p>
+                </div>
+                <p class="signature-big">Forever Yours, ❤️</p>
+                <p class="signature-name">Your Fatty Bobo</p>
+            </div>
+        </section>
+
+        <div class="rabbit-hole scroll-reveal">
+            <p class="curiouser">✨ Always Enjoying Life With You ✨</p>
+            <div class="wishes-container">
+                <p class="wishes-item">💪 I will strive to be the best boyfriend ever!</p>
+                <p class="wishes-item">🍀 I will bring us success and luck!</p>
+                <p class="wishes-item">😊 I will make you the happiest gal ever!</p>
+            </div>
+        </div>
+        
+        <div class="final-box scroll-reveal">
+            <p class="final-message">Here's to an eternity with My Love! 🎂🎉🎈🎁❤️</p>
+            <br>
+            <a href="index.html" class="back-button">🏠 Back to Main Page</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Scroll-based color changing effect
+        function updateBackgroundColor() {
+            const scrollPosition = window.scrollY;
+            const windowHeight = window.innerHeight;
+            const documentHeight = document.documentElement.scrollHeight - windowHeight;
+            const scrollPercentage = scrollPosition / documentHeight;
+            
+            // Define color zones - Alice in Wonderland themed gradient transitions
+            const colorStops = [
+                { percent: 0, colors: ['#1a5f7a', '#159895', '#57c5b6', '#86c8bc', '#a8e6cf'] },      // Teal wonderland
+                { percent: 0.2, colors: ['#6b4891', '#8b5fb6', '#a076c9', '#b48dd7', '#c9a4e5'] },   // Purple magical
+                { percent: 0.4, colors: ['#e63946', '#f07167', '#f4a261', '#f9c74f', '#ffd97d'] },   // Warm sunset
+                { percent: 0.6, colors: ['#2a9d8f', '#43aa8b', '#55b88d', '#6cc68f', '#84d490'] },   // Fresh garden
+                { percent: 0.8, colors: ['#ff6b9d', '#ffa3c1', '#ffc1d9', '#ffd6e7', '#ffeef5'] },   // Pink wonderland
+                { percent: 1, colors: ['#264653', '#2a9d8f', '#e76f51', '#f4a261', '#e9c46a'] }      // Rich ending
+            ];
+            
+            // Find which two color stops we're between
+            let startStop = colorStops[0];
+            let endStop = colorStops[1];
+            
+            for (let i = 0; i < colorStops.length - 1; i++) {
+                if (scrollPercentage >= colorStops[i].percent && scrollPercentage <= colorStops[i + 1].percent) {
+                    startStop = colorStops[i];
+                    endStop = colorStops[i + 1];
+                    break;
+                }
+            }
+            
+            // Calculate the interpolation factor between the two stops
+            const segmentPercent = (scrollPercentage - startStop.percent) / (endStop.percent - startStop.percent);
+            
+            // Interpolate between colors
+            const interpolatedColors = startStop.colors.map((startColor, index) => {
+                const endColor = endStop.colors[index];
+                return interpolateColor(startColor, endColor, segmentPercent);
+            });
+            
+            // Apply gradient
+            const gradient = `linear-gradient(135deg, ${interpolatedColors[0]} 0%, ${interpolatedColors[1]} 25%, ${interpolatedColors[2]} 50%, ${interpolatedColors[3]} 75%, ${interpolatedColors[4]} 100%)`;
+            document.body.style.background = gradient;
+            document.body.style.backgroundSize = '400% 400%';
+            document.body.style.backgroundAttachment = 'fixed';
+        }
+        
+        // Helper function to interpolate between two hex colors
+        function interpolateColor(color1, color2, factor) {
+            const c1 = hexToRgb(color1);
+            const c2 = hexToRgb(color2);
+            const r = Math.round(c1.r + (c2.r - c1.r) * factor);
+            const g = Math.round(c1.g + (c2.g - c1.g) * factor);
+            const b = Math.round(c1.b + (c2.b - c1.b) * factor);
+            return rgbToHex(r, g, b);
+        }
+        
+        function hexToRgb(hex) {
+            const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+            return result ? {
+                r: parseInt(result[1], 16),
+                g: parseInt(result[2], 16),
+                b: parseInt(result[3], 16)
+            } : null;
+        }
+        
+        function rgbToHex(r, g, b) {
+            return "#" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
+        }
+        
+        // Listen for scroll events
+        let ticking = false;
+        window.addEventListener('scroll', () => {
+            if (!ticking) {
+                window.requestAnimationFrame(() => {
+                    updateBackgroundColor();
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        });
+        
+        // Initialize on load
+        updateBackgroundColor();
+        
+        // Create extravagant confetti on page load
+        function createConfetti() {
+            const confettiEmojis = ['🎊', '🎉', '🎈', '🎁', '🌟', '✨', '💝', '🎀', '💖', '⭐', '💫', '🏆', '👑', '💎'];
+            const colors = ['#ff6b9d', '#feca57', '#48dbfb', '#ff9ff3', '#54a0ff', '#00d2d3'];
+            
+            // Create 60 confetti pieces
+            for (let i = 0; i < 60; i++) {
+                setTimeout(() => {
+                    const confetti = document.createElement('div');
+                    confetti.className = 'confetti';
+                    confetti.innerHTML = confettiEmojis[Math.floor(Math.random() * confettiEmojis.length)];
+                    confetti.style.left = Math.random() * 100 + 'vw';
+                    confetti.style.animationDuration = (Math.random() * 2 + 2) + 's';
+                    confetti.style.animationDelay = (Math.random() * 0.5) + 's';
+                    confetti.style.fontSize = (Math.random() * 20 + 20) + 'px';
+                    confetti.style.color = colors[Math.floor(Math.random() * colors.length)];
+                    document.body.appendChild(confetti);
+                    
+                    // Remove after animation
+                    setTimeout(() => confetti.remove(), 4500);
+                }, i * 50);
+            }
+        }
+        
+        // Trigger confetti on page load
+        window.addEventListener('load', () => {
+            createConfetti();
+            // Create another burst after 2 seconds
+            setTimeout(createConfetti, 2000);
+        });
+    </script>
+</body>
+</html>
