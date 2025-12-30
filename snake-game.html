@@ -367,14 +367,14 @@
 
     <div class="game-container">
         <h1>🐍 Birthday Snake Challenge! 🎂</h1>
-        <p class="instructions">Reach 5 points to continue to Wonderland! 🎉</p>
+        <p class="instructions">Reach 2 points to continue to Wonderland! 🎉</p>
         
         <div class="score-board">
             <div class="score-item">
                 Score: <span class="score-value" id="score">0</span>
             </div>
             <div class="score-item">
-                Target: <span class="score-value">5</span>
+                Target: <span class="score-value">2</span>
             </div>
         </div>
 
@@ -391,7 +391,7 @@
 
     <div class="victory-message" id="victoryMessage">
         <h2>🎉 Victory! 🎉</h2>
-        <p>You've reached 5 points!</p>
+        <p>You've reached 2 points!</p>
         <p>🎂 Welcome to Birthday Wonderland! 🎂</p>
         <p class="redirect-text">Redirecting to your celebration...</p>
     </div>
@@ -519,7 +519,7 @@
                 speed = Math.max(50, speed - 2);
 
                 // Check for victory
-                if (score >= 5) {
+                if (score >= 2) {
                     victory();
                 }
             }
