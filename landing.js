@@ -6,18 +6,32 @@ const CHASE_DURATION = 8000;
 function createShootingStar() {
     const star = document.createElement('div');
     star.className = 'shooting-star';
-    
+
     // Random starting position at top or left edge
     const startTop = Math.random() * 30; // Top 30% of screen
-    const startLeft = Math.random() * 50; // Left 50% of screen
-    
+    const startLeft = Math.random() * 60; // Left 60% of screen
+
     star.style.top = startTop + '%';
     star.style.left = startLeft + '%';
-    star.style.animation = 'shootingStar 2.5s ease-in forwards';
-    
+
+    // Pick a random travel vector and angle using CSS variables for smooth GPU animations
+    const vw = Math.max(window.innerWidth, 800);
+    const vh = Math.max(window.innerHeight, 600);
+    const dx = Math.round((80 + Math.random() * 60)) + 'vw';
+    const dy = Math.round((80 + Math.random() * 60)) + 'vh';
+    const angle = Math.round(-60 + Math.random() * 40) + 'deg';
+    const duration = (1.6 + Math.random() * 1.4).toFixed(2) + 's';
+
+    star.style.setProperty('--dx', dx);
+    star.style.setProperty('--dy', dy);
+    star.style.setProperty('--angle', angle);
+    star.style.animation = `shootingStar ${duration} cubic-bezier(.2,.9,.2,1) forwards`;
+    star.style.willChange = 'transform, opacity';
+
     document.body.appendChild(star);
-    
-    setTimeout(() => star.remove(), 2500);
+
+    // Remove after animation completes
+    setTimeout(() => star.remove(), parseFloat(duration) * 1000 + 200);
 }
 
 // Floating Hearts Effect

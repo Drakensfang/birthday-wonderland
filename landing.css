@@ -50,6 +50,8 @@ body::before {
         0 0 90px 20px rgba(255, 182, 193, 0.6);
     pointer-events: none;
     z-index: 9999;
+    will-change: transform, opacity;
+    opacity: 0.95;
 }
 
 .shooting-star::before {
@@ -71,14 +73,14 @@ body::before {
 
 @keyframes shootingStar {
     0% {
-        transform: translate(0, 0) rotate(-45deg);
+        transform: translate(0, 0) rotate(var(--angle, -45deg));
         opacity: 1;
     }
     80% {
         opacity: 1;
     }
     100% {
-        transform: translate(1500px, 1500px) rotate(-45deg);
+        transform: translate(var(--dx, 120vw), var(--dy, 120vh)) rotate(var(--angle, -45deg));
         opacity: 0;
     }
 }
@@ -153,7 +155,7 @@ body::before {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    animation: shimmer 3s ease infinite, float 3s ease-in-out infinite, colorShift 6s ease infinite;
+    animation: shimmer 4s ease infinite, float 4.5s ease-in-out infinite, colorShift 8s ease infinite;
     margin-bottom: 2rem;
     filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.5));
     transform-origin: center;
@@ -200,7 +202,7 @@ body::before {
         transform: translateY(0px) scale(1);
     }
     50% { 
-        transform: translateY(-15px) scale(1.05);
+        transform: translateY(-8px) scale(1.03);
     }
 }
 
@@ -274,7 +276,8 @@ body::before {
 }
 
 .obstacle:hover .obstacle-front {
-    transform: scale(1.1);
+    transform: scale(1.08) translateY(-6px);
+    box-shadow: 0 14px 30px rgba(0,0,0,0.45);
 }
 
 .obstacle-front {
@@ -290,7 +293,7 @@ body::before {
     font-size: 3rem;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4), inset 0 2px 4px rgba(255, 255, 255, 0.5);
     backface-visibility: hidden;
-    transition: transform 0.6s ease;
+    transition: transform 0.45s cubic-bezier(.2,.9,.2,1), box-shadow 0.35s ease;
     overflow: hidden;
 }
 
@@ -480,21 +483,28 @@ body::before {
 
 .sparkle {
     position: absolute;
-    width: 10px;
-    height: 10px;
-    background: #ffd700;
+    width: 8px;
+    height: 8px;
+    background: radial-gradient(circle at 30% 30%, #fff 0%, #ffd700 60%);
     border-radius: 50%;
-    animation: sparkleAnim 1s ease-out forwards;
+    transform: translate(var(--tx, 0px), var(--ty, 0px)) scale(0);
+    opacity: 1;
+    animation: sparkleAnim 900ms cubic-bezier(.2,.9,.2,1) forwards;
     pointer-events: none;
+    will-change: transform, opacity;
 }
 
 @keyframes sparkleAnim {
     0% {
-        transform: scale(0) rotate(0deg);
+        transform: translate(var(--tx, 0px), var(--ty, 0px)) scale(0);
         opacity: 1;
     }
+    60% {
+        transform: translate(calc(var(--tx, 0px) * 0.6), calc(var(--ty, 0px) * 0.6)) scale(1.1) rotate(30deg);
+        opacity: 0.9;
+    }
     100% {
-        transform: scale(3) rotate(180deg);
+        transform: translate(0, 0) scale(0.2) rotate(60deg);
         opacity: 0;
     }
 }
